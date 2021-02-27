@@ -5,8 +5,8 @@ html{
 }
 .grid {
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 50px 350px 350px;
+    grid-template-columns: 25% 73%;
+    grid-template-rows: 50px 350px 350px 50px;
     grid-gap: 1em;
     }
     header{
@@ -23,7 +23,7 @@ html{
     }
    
     header,
-    .skills {
+    .skills,footer {
     grid-column-start: 1;
     grid-column-end: 3;
 
@@ -79,4 +79,17 @@ html{
       text-align: center;
       transition:all 0.2s;
     }
-    
+    @media  only screen and (max-width:800px){
+      html{
+          font-size:10px;
+      }
+      .allskills{
+          display: flex;
+          align-items: center;
+          align-content:center;
+          flex-direction: column;
+         
+         
+      }
+      
+  }
