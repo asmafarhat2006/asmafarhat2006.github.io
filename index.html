@@ -1,1 +1,101 @@
-Hello World
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Asma Qureshi | Portfolio</title>
+        <link href="resources/style.css" type="text/css" rel="stylesheet">
+        <script>
+            let showmoreskills = function(event){
+                if(event.target.innerHTML.match('More')){
+                document.getElementsByClassName('skills')[0].style.display = 'block';
+               
+                event.target.innerHTML = 'Read Less';
+                }else{
+                    document.getElementsByClassName('skills')[0].style.display = 'none';
+               
+               event.target.innerHTML = 'Read More';
+                }
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <h2>Asma Qureshi</h2>
+                <nav>
+                    <span><a href="index.html">Home  </a></span>
+                    <span><a href="#">Experience  </a></span>
+                    <span><a href="#">Projects</a></span>
+                    <span><a href="#">Posts </a></span>
+                    <span><a href="#">Resume </a></span>
+                    <span><a href="contact.html">Contact us </a></span>
+                </nav>
+            </header>
+            <aside>
+                <img src="resources/images/Margo.jpg"/>
+                <h3>Asma Farhat Qureshi</h3>
+                <p>Computer Engineer</p>
+                <p>University Of Enginneering & Technology, Pakistan</p>
+           </aside>
+            <main>
+                 <h3>Biography</h3>
+                 <p>I am a part time developer and a full time mother. I graduated as a Computer Engineer from University of Enginneering & Technology,Pakistan in 2010.
+                                        In 2015 I came to Birmingham and now i have decided to start my career here. 
+                                        My interests lie in solving problems related to web systems.</p>
+                    <div class="interests">
+                    <ul>
+                        <h4>Interests</h4>
+                        <li>Software Enginneering</li>
+                        <li>Web Development</li>
+                        <li>Data Science</li>
+                    </ul>
+                    
+                    <ul>
+                        <h4>Education</h4>
+                        <li>MS in Computer Science</li>
+                        <li>BCE in Computer Enginneering</li>
+                        
+                    </ul>
+                </div>
+                <a href="#" onclick="showmoreskills(event)" class="button3">Read More</a>
+                </main>
+               
+                <div class="skills">
+                    
+                    <h3>Skills</h3>
+                    <div class="allskills">    
+                        
+                        <div class="skill">
+                        <h3>PHP</h3>
+                        <p>Laravel,Codeigniter</p>
+                        </div>
+                        <div class="skill">
+                       <h3>Front End Tech</h3>
+                        <p>HTML,CSS3,Jquery,Javascript</p>
+                        </div>
+                        <div class="skill">
+                        <h3>.NET Framework</h3>
+                        <p>.NET C#,Visual Basic</p>
+                        </div>
+                        <div class="skill">
+                        <h3>Python</h3>
+                        <p>Basic Python</p>
+                        </div>
+                        <div class="skill">
+                        <h3>Databases</h3>
+                        <p>Microsoft SQL Server, MySQL</p>
+                        </div>
+                        <div class="skill">
+                        <h3>Extensions development </h3>
+                        <p>Browser extensions</p>
+                        </div>
+                    </div>    
+                </div>
+               
+            
+        </div>
+        <footer>
+            © Asma Qureshi
+        </footer>
+    </body>
+</html>
